@@ -11,7 +11,7 @@ public class PostgresTest {
 
         Properties props = new Properties();
 
-        try (InputStream fileIn = PostgresTest.class.getClassLoader().getResourceAsStream("config.properties")) {
+        try (InputStream fileIn = PostgresTest.class.getClassLoader().getResourceAsStream("flyway.conf")) {
 
             if(fileIn == null) {
                 throw new IllegalArgumentException("Arquivo especificado não encontrado. ");

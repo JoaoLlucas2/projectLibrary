@@ -12,7 +12,7 @@ public class ServerDemo1 {
         String sql = "SELECT * FROM person";
 
         //Carregando o arquivo Properties para dentro do código usando o caminho absoluto
-        try(InputStream fileIn = ServerDemo1.class.getClassLoader().getResourceAsStream("config.properties")) {
+        try(InputStream fileIn = ServerDemo1.class.getClassLoader().getResourceAsStream("flyway.conf")) {
 
             //verificando se o arquivo foi encontrado ou não (Lançando Exceção)
             if(fileIn == null) {
